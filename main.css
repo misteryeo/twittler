@@ -1,0 +1,183 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+@import 'https://fonts.googleapis.com/css?family=roboto:100,300';
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'roboto', helvetica;
+   background: linear-gradient(red, blue, green);
+  height: 100%;
+}
+html{
+ background: linear-gradient(red, blue, green);
+  height: 100%;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  white-space:pre-wr1 p;
+ }
+h1 {
+  text-align: center;
+  margin: 0px auto 0px auto;
+  font-size: 3em;
+  padding-top: 2em;
+  color: yellow;
+}
+
+textarea {
+  text-align: left;
+  padding: .5em;
+  display:block;
+  background-color: white;
+  width: 30%;
+  height:2%;
+  margin: 0 auto;
+  margin-top: 2em;
+  resize: none;
+  font-size: 1em;
+}
+
+
+#newTweets{
+  padding: 0.5em;
+  font-size: 0.3em;
+  width: 20%;
+}
+
+#newTweets: hover{
+  padding: 1em;
+  margin: 1em;
+  background-color: red;
+}
+
+.tweetDiv{
+  text-align: left;
+  padding: .5em;
+  display:block;
+  background-color: white;
+  border: 1px solid antiquewhite;
+  width: 35%;
+  margin: 0 auto;
+
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 0;
+  color: #1DA1F2 !important;
+  flex-grow:1;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 300;
+  }
+
+
+/*********** Navigation ************/
+.nav-inner{
+    background: #fff;
+    height: 46px;
+}
+.nav-outer{
+
+}
+#global-actions > li > a {
+    border-bottom-color: #0084B4;
+}
+#global-actions > li > a {
+    border-bottom: 5px solid #1b95e0;
+    transition: all .15s ease-in-out;
+}
+
+.nav>li>a, .nav>li>button {
+    color: #1DA1F2;
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    height: 46px;
+    line-height: 1;
+    padding: 0 14px 0 4px;
+}
+.container{
+  margin-top: 50px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Newly added styles from Andy */
+
+.navMenu{
+  display: inline-flex;
+  overflow: hidden;
+  background-color: #333333;
+  width: 100%;
+}
+
+
+/* Style the links inside the list items */
+.navMenu li a {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.2s;
+    font-size: 17px;
+
+}
+
+/* Change background color of links on hover */
+.navMenu li a:hover {
+  background-color: #555;
+}
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+.navMenu .icon {
+  display: none;
+}
+
+.navList{
+  flex: auto;
+}
+
+
+
