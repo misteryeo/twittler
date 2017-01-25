@@ -3,25 +3,29 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="timeago.js" type="text/javascript"></script>
+    <script src="tweetscripts.js" type="text/javascript"> </script>
+    <link rel="stylesheet" type="text/css" href="main.css" charset="utf-8">
+
+
   </head>
   <body>
-    <script>
+  <header>
+ 
+  </header>
 
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
+  <nav>
+    <ul class="navMenu">
+      <li><a href="#" class='navLink'><li id="home">Home</li></a>
+      <li><a href="#" class="navLink"><li id="moments">Moments</li></a>
+      <li><a href="#" class="navLink"><li id="notifications">Notifications</li></a>
+      <li><a href="#" class="navLink"><li id="messages">Messages</li> </a>
+    </ul>
+  </nav>
 
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
+  <h1>Rainbow Twittler Rocks!</h1>
+  <textarea placeholder="What's happening?"></textarea>
+  <div class="container"></div>
 
-      });
-
-    </script>
   </body>
 </html>
